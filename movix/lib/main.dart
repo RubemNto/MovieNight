@@ -63,38 +63,169 @@ class AfterSplash extends StatelessWidget {
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Container(
-                margin: EdgeInsets.only(top: 25),
-                height: 60,
-                width: 220,
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.all(
-                    Radius.circular(25),
+              InkWell(
+                child: Container(
+                  margin: EdgeInsets.only(top: 25),
+                  height: 60,
+                  width: 220,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.all(
+                      Radius.circular(25),
+                    ),
+                    border: Border.all(
+                      color: Colors.redAccent[400],
+                      width: 5,
+                    ),
                   ),
-                  border: Border.all(
-                    color: Colors.redAccent[400],
-                    width: 5,
-                  ),
-                ),
-                child: Center(
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Container(
-                        child: Text(
-                          "search",
-                          style: TextStyle(
-                            color: Colors.redAccent[400],
-                            fontSize: 20,
-                            fontWeight: FontWeight.bold,
+                  child: Center(
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Container(
+                          child: Text(
+                            "search",
+                            style: TextStyle(
+                              color: Colors.redAccent[400],
+                              fontSize: 20,
+                              fontWeight: FontWeight.bold,
+                            ),
                           ),
                         ),
-                      ),
-                    ],
+                      ],
+                    ),
+                  ),
+                ),
+                onTap: () {
+                  print("here");
+                },
+              ),
+            ],
+          ),
+          Column(
+            children: [
+              Container(
+                margin: EdgeInsets.only(right: 115, top: 15),
+                child: Text(
+                  "MOVIES\n_____________________________",
+                  style: TextStyle(
+                    color: Colors.redAccent[400],
+                    fontSize: 20,
                   ),
                 ),
               ),
             ],
+          ),
+          Container(
+            margin: EdgeInsets.symmetric(vertical: 20.0),
+            height: 220.0 * 2 / 3,
+            child: ListView(
+              scrollDirection: Axis.horizontal,
+              children: <Widget>[
+                Container(
+                  margin: EdgeInsets.only(
+                    left: 15,
+                    right: 15,
+                  ),
+                  width: 121 * 2 / 3,
+                  color: Colors.redAccent[400],
+                ),
+                Container(
+                  margin: EdgeInsets.only(
+                    left: 15,
+                    right: 15,
+                  ),
+                  width: 121 * 2 / 3,
+                  color: Colors.blue,
+                ),
+                Container(
+                  margin: EdgeInsets.only(
+                    left: 15,
+                    right: 15,
+                  ),
+                  width: 121 * 2 / 3,
+                  color: Colors.green,
+                ),
+                Container(
+                  margin: EdgeInsets.only(
+                    left: 15,
+                    right: 15,
+                  ),
+                  width: 121 * 2 / 3,
+                  color: Colors.yellow,
+                ),
+                Container(
+                  margin: EdgeInsets.only(
+                    left: 15,
+                    right: 15,
+                  ),
+                  width: 121 * 2 / 3,
+                  color: Colors.orange,
+                ),
+              ],
+            ),
+          ),
+          Column(
+            children: [
+              Container(
+                margin: EdgeInsets.only(right: 115, top: 15),
+                child: Text(
+                  "SERIES\n_____________________________",
+                  style: TextStyle(
+                    color: Colors.redAccent[400],
+                    fontSize: 20,
+                  ),
+                ),
+              ),
+            ],
+          ),
+          Container(
+            margin: EdgeInsets.symmetric(vertical: 20.0),
+            height: 220.0 * 2 / 3,
+            child: ListView(
+              scrollDirection: Axis.horizontal,
+              children: <Widget>[
+                Container(
+                  margin: EdgeInsets.only(
+                    left: 15,
+                    right: 15,
+                  ),
+                  width: 121 * 2 / 3,
+                  color: Colors.redAccent[400],
+                ),
+                Container(
+                  margin: EdgeInsets.only(
+                    left: 15,
+                    right: 15,
+                  ),
+                  width: 121 * 2 / 3,
+                  color: Colors.blue,
+                ),
+                Container(
+                  margin: EdgeInsets.only(
+                    left: 15,
+                    right: 15,
+                  ),
+                  width: 121 * 2 / 3,
+                  color: Colors.green,
+                ),
+                Container(
+                  margin: EdgeInsets.only(
+                    left: 15,
+                    right: 15,
+                  ),
+                  width: 121 * 2 / 3,
+                  color: Colors.yellow,
+                ),
+                Container(
+                  margin: EdgeInsets.only(
+                    left: 15,
+                    right: 15,
+                  ),
+                  width: 121 * 2 / 3,
+                  color: Colors.orange,
+                ),
+              ],
+            ),
           ),
         ],
       ),
